@@ -1,0 +1,44 @@
+body{
+    background-color: #F4F7FB;
+    font-family: "Poppins";
+}
+main{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#weather-result{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+.title1{
+    font-size: 80px;
+    color: #0A4D8C;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.btn-primary{
+    background-color: #4DA6FF;
+    color: #FFFF;
+    border-radius: 15PX;
+    border-color: white;
+    height: 50PX;
+    cursor: pointer;
+    font-size: 20px;
+}
+.btn-primary:hover{
+    background-color: #1B87D6 ;
+}
+.temp-display{
+    border-radius: 100px;
+}
+#weatherImage {
+  width: 180px;
+  height: auto;
+  margin-top: 30px;
+  margin-bottom: -20px;
+}

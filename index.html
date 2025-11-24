@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App with Inputs</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+    <main class="weather-container">
+        <h1 class="title1">Clima</h1>
+        
+        <div class="input-group">
+            <label for="latitude-input">Agrega la latitud</label>
+            <input type="number" id="latitude-input" placeholder="e.g. 19.43" value="25.666815" step="any">
+        </div>
+
+        <div class="input-group">
+            <label for="longitude-input">Agrega la latitud</label>
+            <input type="number" id="longitude-input" placeholder="e.g. -99.13" value="-100.28233" step="any">
+        </div>
+
+        <button class="btn-primary" id="fetch-btn" onclick="handleFetchClick()">Obtener clima</button>
+        <p id="loading-message" style="display:none;">Cargando...</p>
+        <img id="weatherImage" src="default.png" alt="Clima">
+        <div id="weather-result" class="result-box hidden">
+            <p>Temperatura: <span id="temp-display">--</span> °C</p>
+            <p>Viento: <span id="wind-display">--</span> km/h</p>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
